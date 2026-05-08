@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WiFi Konig</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: white;
+}
+
+.card {
+    width: 320px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, orange, #ff5e00);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 11px;
+    opacity: 0.5;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="logo">KÖNIG WIFI</div>
+    <div class="subtitle">Accede a Internet de forma gratuita</div>
+
+    <form method="GET" action="$authaction">
+        <input type="hidden" name="tok" value="$tok">
+        <input type="hidden" name="redir" value="http://lasallegirona.sallenet.net/">
+        <button type="submit">Conectar</button>
+    </form>
+
+    <div class="footer">
+        Powered by WiFi Portal System
+    </div>
+
+</div>
+
+</body>
+</html>
